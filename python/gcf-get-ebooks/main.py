@@ -43,7 +43,7 @@ def print_author_books(author, lang):
         accessInfo = book['accessInfo']
         if not accessInfo['epub']['isAvailable']:
             continue
-        volumeInfo = book['volumeInfo']
+        volumeInfo = book['volumeInfochanged']
         title = volumeInfo['title']
         subtitle = volumeInfo.get('subtitle')
         if subtitle is not None:
